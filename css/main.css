@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+section {
+  padding: 120px 0; }
+
+.logo {
+  background: #7cc576;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 40px;
+  margin-right: 10px; }
+
+.logo--text {
+  font-size: 18px;
+  font-weight: bold; }
+
+.nav-bar {
+  height: 115px;
+  line-height: 115px;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 75%;
+  margin: 0 auto; }
+  .nav-bar a {
+    float: right;
+    margin: 0 20px;
+    display: block;
+    color: #777777;
+    text-decoration: none; }
+  .nav-bar a:hover, .nav-bar a:active, .nav-bar a:visited {
+    color: #000; }
+
+.titleSection {
+  background-image: url("../img/title-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  /*to have tint work properly*/ }
+
+.backgroundTint {
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 530px;
+  padding-top: 100px; }
+
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
+
+.servicesBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.servicesIcon {
+  margin: 90px 0 40px; }
+
+.relaxCol {
+  float: left; }
+
+.relaxCol--thin {
+  width: 30.5%; }
+
+.relaxCol--wide {
+  width: 69.5%; }
+
+.itemSmall {
+  width: 30%;
+  margin: 0 1.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+  text-transform: uppercase; }
+
+.title--small {
+  font-size: 18px; }
+
+.title--titleSection {
+  font-size: 60px;
+  color: white; }
+
+.desc {
+  font-size: 20px;
+  color: #777777;
+  text-align: center; }
+
+.desc--small {
+  font-size: 14px; }
+
+.button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 50px;
+  background: #7cc576;
+  border: none;
+  border-radius: 25px; }
+
+.button:hover {
+  color: #000;
+  background: #fff;
+  cursor: pointer; }
+
+.clearfix {
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */
