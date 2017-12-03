@@ -46,12 +46,14 @@ section {
 
 .backgroundTint {
   background: rgba(0, 0, 0, 0.75);
+  min-height: 530px;
+  padding-top: 100px; }
+
+.backgroundTint--centered {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  min-height: 530px;
-  padding-top: 100px; }
+  width: 100%; }
 
 .servicesSection {
   display: flex;
@@ -68,14 +70,47 @@ section {
 .servicesIcon {
   margin: 90px 0 40px; }
 
-.relaxCol {
-  float: left; }
+.relaxSection {
+  padding: 0px; }
 
-.relaxCol--thin {
-  width: 30.5%; }
+.relaxColLeft {
+  float: left;
+  width: 30.5%;
+  min-height: 530px;
+  padding-top: 120px;
+  background-image: url("../img/relax-lf-gear.png");
+  background-color: #e9e9e9;
+  background-repeat: no-repeat;
+  background-position-x: 10vw;
+  background-position-y: 120px; }
 
-.relaxCol--wide {
-  width: 69.5%; }
+#relaxColRightTint {
+  padding-left: 100px;
+  padding-top: 120px; }
+
+.relaxColRight {
+  float: left;
+  width: 69.5%;
+  background-image: url("../img/relax-rt-bg.png");
+  background-size: cover; }
+
+.relaxDesc {
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  top: -10px; }
+
+#relaxTopDesc {
+  position: unset;
+  margin-top: 50px; }
+
+.relaxList {
+  list-style-image: url("../img/list-check.png");
+  margin-bottom: 50px; }
+  .relaxList li {
+    position: relative;
+    margin: 10px 0; }
 
 .itemSmall {
   width: 30%;
@@ -92,6 +127,9 @@ section {
 
 .title--small {
   font-size: 18px; }
+
+.title--white {
+  color: #fff; }
 
 .title--titleSection {
   font-size: 60px;
@@ -112,12 +150,16 @@ section {
   padding: 20px 50px;
   background: #7cc576;
   border: none;
-  border-radius: 25px; }
+  border-radius: 25px;
+  text-transform: uppercase; }
 
 .button:hover {
   color: #000;
   background: #fff;
   cursor: pointer; }
+
+.highlight {
+  color: #7cc576; }
 
 .clearfix {
   clear: both; }

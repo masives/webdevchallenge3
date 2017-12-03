@@ -55,13 +55,18 @@ section{
 
 .backgroundTint{
     background: rgba(0,0,0, 0.75);
+    
+    min-height: 530px;
+    padding-top: 100px;
+}
+.backgroundTint--centered{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 530px;
-    padding-top: 100px;
 }
+
+
 .servicesSection{
     display: flex;
     flex-direction: column;
@@ -80,14 +85,53 @@ section{
     margin: 90px 0 40px;
 }
 
-.relaxCol{
+.relaxSection{
+    padding: 0px;
+}
+$relaxTopPadding: 120px;
+.relaxColLeft{
     float: left;
-}
-.relaxCol--thin{
     width:30.5%;
+    min-height: 530px;
+    padding-top: $relaxTopPadding;
+    background-image: url('../img/relax-lf-gear.png');
+    background-color: #e9e9e9;
+    background-repeat: no-repeat;
+    background-position-x: 10vw;
+    background-position-y: $relaxTopPadding;
 }
-.relaxCol--wide{
+
+#relaxColRightTint{
+    padding-left: 100px;
+    padding-top: $relaxTopPadding;
+}
+
+.relaxColRight{
+    float: left;
     width:69.5%;
+    background-image: url('../img/relax-rt-bg.png');
+    background-size: cover;
+}
+
+.relaxDesc{
+    font-size: 16px;
+    color:#fff;
+    text-align: left;
+    position: absolute;
+    top: -10px;
+}
+#relaxTopDesc{
+    position: unset;
+    margin-top: 50px;
+}
+
+.relaxList{
+    list-style-image: url('../img/list-check.png');
+    margin-bottom: 50px;
+    li{
+        position:relative;
+        margin: 10px 0;
+    }
 }
 
 .itemSmall{
@@ -107,10 +151,14 @@ section{
 .title--small{
     font-size: 18px;
 }
+.title--white{
+    color:#fff;
+}
 .title--titleSection{
     font-size: 60px;
     color:white;
 }
+
 .desc{
     font-size: 20px;
     color: #777777;
@@ -120,9 +168,8 @@ section{
     font-size: 14px;
 }
 
-.desc--heavy{
-    
-}
+
+
 .button{
     color: #fff;
     font-size: 16px;
@@ -131,11 +178,15 @@ section{
     background: $limegreen;
     border: none;
     border-radius: 25px;
+    text-transform: uppercase;
 }
 .button:hover{
     color:#000;
     background: #fff;
     cursor: pointer;
+}
+.highlight{
+    color: $limegreen;
 }
 
 .clearfix{
