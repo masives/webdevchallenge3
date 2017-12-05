@@ -154,16 +154,34 @@ $relaxTopPadding: 120px;
     h3{
         padding-top:8px;
     }
+    .iconBorder{
+        margin-right: 20px;
+    }
 }
 
+.cultureSection{
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0px;
+    .title--small{
+        margin-top:25px;
+    }
+}
 
+.icon{
+   
+}
 
 .iconBorder{
     border: 4px solid #000;
     border-radius: 50%;
     padding: 15px;
     float: left;
-    margin-right: 20px;
+    
+}
+.iconBorder--grey{
+    border-color: #787878;
 }
 
 .itemSmall{
