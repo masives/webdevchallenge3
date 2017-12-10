@@ -157,9 +157,8 @@ $relaxTopPadding: 120px;
 
 .cultureSection{
     text-align: center;
-    width: 80vw;
-    margin: 0 auto;
-    padding: 0px;
+    padding: 0 20vw;
+    background:#f9f9f9;
     .title--small{
         margin-top:25px;
     }
@@ -215,6 +214,58 @@ $relaxTopPadding: 120px;
     }
 }
 
+.topFooterSection{
+    padding: 60px 20vw;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    color:#fff;
+    
+    .itemSmall{
+        align-items: initial;
+    }
+ 
+}
+.footerLink{
+    margin: 10px 0;
+    
+    img{
+        display: block;
+        float: left;
+    }
+    
+    span{
+        color: #eaeaea;
+        text-decoration: none;
+        display: inline-block;
+        padding-left: 20px;
+        width: 80%;
+    }
+    :hover, :hover span {
+    color: $limegreen;
+    }
+}
+
+.footerList{
+    list-style-image: url('../img/Icon-Twitter.png');
+    margin: 10px 0;
+    color: #eaeaea;
+    li{
+        padding-left: 10px;
+        margin-bottom: 10px;
+        p{
+            margin: 5px 0;
+        }
+    }
+}
+
+.hashtag{
+    font-weight: bold
+}
+.timeStamp{
+    font-size:12px;
+}
+
 .iconBorder{
     border: 4px solid #000;
     border-radius: 50%;
@@ -232,6 +283,11 @@ $relaxTopPadding: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+itemSmall--hover{
+    ahover{
+        color: $limegreen !important;
+    }
 }
 
 .title{
