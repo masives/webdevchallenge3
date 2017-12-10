@@ -136,6 +136,27 @@ section {
   .cultureSection .title--small {
     margin-top: 25px; }
 
+.clientsSection {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto; }
+
+/* font-size:22px;
+18px podpis*/
+.clientsBox {
+  font-size: 22px;
+  width: 50.1%; }
+
+#clientsBoxRight {
+  float: right; }
+
+#clientsBoxLeft {
+  float: left; }
+
+.quoteAuthor {
+  color: #7cc576;
+  font-size: 18px; }
+
 .iconBorder {
   border: 4px solid #000;
   border-radius: 50%;
