@@ -1,4 +1,5 @@
 $limegreen: #7cc576;
+$tabletWidth: 820px;
 
 body{
     margin: 0;
@@ -33,6 +34,11 @@ section{
     width:75%;
     margin: 0 auto;
     
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
     a {
         float: right;
         margin: 0 20px;
@@ -46,11 +52,58 @@ section{
             color: #000;
         }
 }
+.nav-bar--desktop{
+    @media(max-width:870px){
+        display:none
+    }
+}
+
+.nav-bar--mobile{
+    height:unset;
+    line-height: 65px;
+    width:100%;
+    position: fixed;
+    background: #fff;
+    top: -800px;
+    
+    a{
+        float: none;
+        width: 100%;
+        text-align: center;
+        line-height: normal;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .logo{
+        margin-top: 15px;
+    }
+    
+}
+
+.mobileLogoWrapper{
+    margin: 0 auto;
+    width: 170px;
+}
+
+.nav-burger{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    background-color: #fff;
+}
+
+.show-menu{
+    top: 0px;
+}
+
 .titleSection{
     background-image: url('../img/title-bg.png');
     background-size: cover;
     background-position: center;
     padding: 0; /*to have tint work properly*/
+    text-align: center;
+    
+    
 }
 
 .backgroundTint{
@@ -74,16 +127,25 @@ section{
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    
+    
 }
 
 .servicesBox{
    display: flex;
    flex-direction: row; 
    align-items: center;
+   @media(max-width: 820px){
+        display: block;
+    }
 }
 
 .servicesIcon{
     margin: 90px 0 40px;
+    @media(max-width: 820px){
+        margin: 10px 0;
+    }
+    
 }
 
 .relaxSection{
@@ -100,11 +162,19 @@ $relaxTopPadding: 120px;
     background-repeat: no-repeat;
     background-position-x: 10vw;
     background-position-y: $relaxTopPadding;
+    
+    @media(max-width: $tabletWidth){
+        display:none;
+    }
 }
 
 #relaxColRightTint{
     padding-left: 100px;
     padding-top: $relaxTopPadding;
+    
+    @media(max-width: $tabletWidth){
+        padding: 30px;
+    }
 }
 
 .relaxColRight{
@@ -112,6 +182,21 @@ $relaxTopPadding: 120px;
     width:69.5%;
     background-image: url('../img/relax-rt-bg.png');
     background-size: cover;
+    
+    @media(max-width: $tabletWidth){
+        width:100%;
+        
+        .title{
+            text-align: center;
+        }
+    }
+    
+}
+
+.buttonCenterer{
+    @media(max-width: $tabletWidth){
+        text-align:center;
+    }
 }
 
 .relaxDesc{
@@ -140,12 +225,20 @@ $relaxTopPadding: 120px;
     background-repeat: no-repeat;
     background-position: right;
     text-align: center;
+    @media(max-width: $tabletWidth){
+        background:#fff;
+        padding:30px;
+    }
 }
 
 .projectsWrapper{
     width: 50%;
     margin-left: 10%;
     text-align: left;
+    @media(max-width: $tabletWidth){
+        width: 100%;
+        margin: 0;
+    }
     
     h3{
         padding-top:8px;
@@ -173,13 +266,22 @@ $relaxTopPadding: 120px;
 .clientsBox{
     font-size: 22px;
     width: 50.1%;
+    @media(max-width: $tabletWidth){
+        width: 100%;
+    }
 }
 
 #clientsBoxRight{
     float:right;
+    @media(max-width: $tabletWidth){
+        float:none;
+    }
 }
 #clientsBoxLeft{
     float:left;
+    @media(max-width: $tabletWidth){
+        float:none;
+    }
 }
 
 .quoteAuthor{
@@ -212,6 +314,10 @@ $relaxTopPadding: 120px;
     img{
         margin: 20px;
     }
+    
+    @media(max-width: 500px){
+        flex-direction: column;
+    }
 }
 
 .topFooterSection{
@@ -223,8 +329,26 @@ $relaxTopPadding: 120px;
     
     .itemSmall{
         align-items: initial;
+        @media(max-width: $tabletWidth){
+            width: 400px;
+            margin: 0 auto;
+            .title{
+                text-align: center;
+            }
+        }
+        @media(max-width: 500px){
+            width: 100%;
+        }
+
     }
- 
+    @media(max-width:1280px){
+        padding: 60px 30px;
+    }
+    
+    @media(max-width: $tabletWidth){
+        flex-direction: column;
+    }
+    
 }
 .footerLink{
     margin: 10px 0;
@@ -268,6 +392,11 @@ $relaxTopPadding: 120px;
 
 .bottomFooterSection{
     position:relative;
+        @media(max-width: $tabletWidth){
+            p{
+                text-align: center;
+            }
+        }
 }
 
 .footerLogoWrapper{
@@ -276,6 +405,14 @@ $relaxTopPadding: 120px;
     
     span{
         margin: 0 5px;
+    }
+    
+    @media(max-width: $tabletWidth){
+        top: 31px;
+        span{
+            margin: 5px;
+        }
+        
     }
     
 }
@@ -301,6 +438,10 @@ $relaxTopPadding: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    @media(max-width: 820px){
+        width:100%;
+    }
 }
 itemSmall--hover{
     ahover{
@@ -323,6 +464,9 @@ itemSmall--hover{
 .title--titleSection{
     font-size: 60px;
     color:white;
+    @media(max-width:400px){
+        font-size: 55px;
+    }
 }
 
 
