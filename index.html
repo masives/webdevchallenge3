@@ -203,9 +203,31 @@ donec porttitora entum suscipit aenean rhoncus. ” </p>
             </div>
         </section>
         
-        <footer>
+        <footer class="bottomFooterSection">
             <p>Copyright 2014 Freebiespress.com</p>
-            4 ikony z czarnym tłem font awesome
+            
+            <div class="footerLogoWrapper">
+                
+                <a href="http://www.twitter.com" target="_blank"><span class="iconBorder iconBorder--full" ><img src="img/Twitter.png" style="margin: 3px 0 2px;"></span></a>
+                <a href="http://www.facebook.com" target="_blank"><span class="iconBorder iconBorder--full" ><img src="img/Facebook.png" style="margin: 1px 4px;"></span></a>
+                <a href="http://www.pinterest.com" target="_blank"><span class="iconBorder iconBorder--full" ><img src="img/Pinterest.png" style="margin: 0 1px;"></span></a>
+                <a href="http://www.plus.google.com" target="_blank"><span class="iconBorder iconBorder--full" ><img src="img/Google.png" style="margin: 2px 1px;"></span></a>
+            </div>
+            <script>
+                centerElementHorizontally($('.footerLogoWrapper'));
+                
+                function centerElementHorizontally(targetElementWidth){
+                    //works only on absolute positioned elements
+                    var elementWidth = targetElementWidth.width();
+                    //initial centering
+                    targetElementWidth.css('right', ($(window).width()-elementWidth)/2);
+                    //add event to keep element centered
+                    window.addEventListener("resize", function(event) {
+                        targetElementWidth.css('right', ($(window).width()-elementWidth)/2);
+                    });
+                }
+                
+            </script>
         </footer>
     </body>
 </html>

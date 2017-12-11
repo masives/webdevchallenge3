@@ -215,6 +215,15 @@ section {
 .timeStamp {
   font-size: 12px; }
 
+.bottomFooterSection {
+  position: relative; }
+
+.footerLogoWrapper {
+  position: absolute;
+  top: 0px; }
+  .footerLogoWrapper span {
+    margin: 0 5px; }
+
 .iconBorder {
   border: 4px solid #000;
   border-radius: 50%;
@@ -223,6 +232,9 @@ section {
 
 .iconBorder--grey {
   border-color: #787878; }
+
+.iconBorder--full {
+  background: #000; }
 
 .itemSmall {
   width: 30%;
